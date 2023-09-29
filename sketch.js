@@ -2,25 +2,29 @@ let w;
 var canvas;
 
 function windowResized(){
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth, document.body.scrollHeight);
 }
 
-function setup() {
-  canvas = createCanvas(windowWidth, windowHeight);
-  canvas.position(0,65);
-  canvas.style("z-index", "-1");
+function setWorld(){
   w = new World();
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < globalConfig.prey; i++) {
     w.addAnimal(new Prey(w));
   }
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < globalConfig.predators; i++) {
     w.addAnimal(new Predator(w));
   }
 }
 
+function setup() {
+  canvas = createCanvas(windowWidth, document.body.scrollHeight);
+  canvas.position(0,0);
+  canvas.style("z-index", "-1");
+  setWorld();
+}
+
 function draw() {
-  background(196);
+  background(240);
   w.tic();
   drawPop();
 }
@@ -28,20 +32,14 @@ function draw() {
 function drawPop() {
   let numPrey = w.count(Prey);
   let numPredator = w.count(Predator);
-
-  if (numPrey == 0 || numPredator == 0) {
-    background(196);
-    textSize(32);
-    fill(24);
-    text("steps: " + frameCount, 50, 50);
-    text("prey: " + numPrey, 50, 100);
-    text("predator: " + numPredator, 50, 150);
-    noLoop();
-  } else {  
+  
+  if(numPrey == 0 | numPredator == 0){
+    setWorld();
+  }
+ 
     noStroke();
     fill(0, 0, 255, 124);
     rect(0, 10, numPrey*3, 18);
     fill(255, 0, 0, 124);
     rect (0, 30, numPredator*3, 18);
-  }
 }

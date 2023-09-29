@@ -7,14 +7,14 @@ class Animal {
       this.sz = 15;
       this.energy = 200;
       // Changed the rate to be lower
-      this.reproductionRate = 0.01;
+      this.reproductionRate = globalConfig.predatorReproductionRate;
       this.heading = random(2 * PI);
       this.alive = true;
       this.w = w;
     }
   
     display() {
-      // Implement the display method for your Animal class here.
+      //Implemented differently for Prey and Predator
     }
   
     show() {

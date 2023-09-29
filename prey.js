@@ -1,7 +1,7 @@
 class Prey extends Animal {
     constructor(w) {
       super(w);
-      this.reproductionRate = 0.0002;
+      this.reproductionRate = globalConfig.reproductionRate;
     }
   
     display() {

@@ -14,7 +14,7 @@ class Predator extends Animal {
   
     step() {
       super.step();
-      this.energy -= random(2.5, 3.5);
+      this.energy -= random(1.5, 2.5);
       if (this.shouldReproduce()) {
         this.w.addAnimal(new Predator(this.w));
       }

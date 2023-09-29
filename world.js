@@ -1,6 +1,6 @@
 class World {
     constructor() {
-      this.MAX_ANIMALS = 10000;
+      this.MAX_ANIMALS = 200;
       this.animals = new Array(this.MAX_ANIMALS);
       this.num = 0;
     }
