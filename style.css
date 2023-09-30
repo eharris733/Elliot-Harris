@@ -71,6 +71,8 @@ a{
     grid-template-columns: repeat(2, 1fr); 
     gap: 40px;
     margin: 40px auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .grid-item {
@@ -78,6 +80,16 @@ a{
     border-radius: 10px;
     padding: 20px;
     text-align: center;
+    display: block;
+}
+
+.grid-img{
+    width: 95%;
+    display: block;
+    padding: 10px;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .grid-item h3 {
@@ -109,7 +121,13 @@ a{
     display: inline-block;
     margin: 0 10px;
     font-size: 20px;
+
 }
+
+.social-list i{
+    margin-right: 10px;
+}
+
 
 #email{
     text-align: center;
@@ -130,12 +148,6 @@ footer {
     margin: 0 auto;
 }
 
-.footer-social a {
-    display: inline-block;
-    margin: 0 10px;
-    color: #333;
-    text-decoration: none;
-}
 
 .footer-social {
     padding-top: 30px;
@@ -150,5 +162,50 @@ footer {
 
 .footer-social a:last-child {
     margin-right: 0;
+}
+
+
+/* Responsiveness section */
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    body, html{
+        text-align: center;
+        margin: auto;
+    }
+
+    #about-content{
+        flex-direction: column;
+    }
+
+    #selfie{
+        max-width: 100%;
+        height: auto;
+        flex-shrink: 0;
+    }
+    #main-menu {
+        font-size: 32px; /* Adjust font size for smaller screens */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .section-header {
+        font-size: 32px; /* Adjust font size */
+        padding-top: 20px; /* Adjust padding */
+        margin: 10px; /* Adjust margin */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        gap: 20px; /* Adjust gap */
+        margin: 20px auto; /* Adjust margin */
+    }
+
+
+    .view-code {
+        margin-top: 10px; /* Adjust margin */
+    }
+    #email .content-text{
+        text-align: center;
+        font-size: 24px;
+    }
 }
 
