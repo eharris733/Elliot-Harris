@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">  
     <!-- Font Awesome Lib for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-Av56vQXk5L+Ys1kqHR6IVGvMQA98f6YHXgQb3yjxP9jM1nmy0bdWuo/SVr/N9ABNTGkHJ8doF2EdXLx6O7BbVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"  />
 
 </head>
 
@@ -23,86 +23,82 @@
     <script src="prey.js"></script>
     <script src="predator.js"></script>
     <script src="sketch.js"></script>
-
+    <script src = "smoothscroll.js"></script>
         
         
     <div id = "main-menu">
         <h1>Elliot Harris</h1>
         <h6>Creative Coder. Full Stack Developer. </h3>
     
-    <ul >
-        <li><a href = "#About">About</a></li>
-        <li><a href = #Projects>Projects</a></li>
-        <li><a href = "#Resume">Resume</a></li>
-        <li><a href = "#Contact Me">Contact Me</a></li>
-    </ul>
-</div>
-
-<div id="About">
-    <div class="section-header">About</div>
-    <div id="about-content">
-        <div id="left-about">
-            <img id="selfie" src="resources/basketball.jpg" alt="Your Selfie">
-            <p class = "content-text">I like to play basketball. I also like to code. IDK, this is placeholder text. </p>
-        </div>
-        <a href = #Projects>Next Section</a>
-            
-        </div>
-    </div>
-</div>
-
-
-<div id="Projects">
-    <div class="section-header right-title">Projects</div>
-    <div id="projects-grid" class="grid-container">
-        <!-- Project 1 -->
-        <div class="project-card">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
-            <a href="https://github.com/yourusername/project1" target="_blank">GitHub Repository</a>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
-            <a href="https://github.com/yourusername/project2" target="_blank">GitHub Repository</a>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-            <h3>Project 3</h3>
-            <p>Description of Project 3.</p>
-            <a href="https://github.com/yourusername/project3" target="_blank">GitHub Repository</a>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project-card">
-            <h3>Project 4</h3>
-            <p>Description of Project 4.</p>
-            <a href="https://github.com/yourusername/project4" target="_blank">GitHub Repository</a>
-        </div>
-    </div>
-</div>
-
-
-    <div id = "Resume">
-
+        <ul >
+            <li><a href = "#About">About</a></li>
+            <li><a href = #Projects>Projects</a></li>
+            <li><a href = "resources/ElliotHarrisResume copy.pdf" download="ElliotHarrisResume.pdf">Resume</a></li>
+            <li><a href = "#Social">Social</a></li>
+        </ul>
     </div>
 
-    <div id = "Contact-Me">
+    <div id="About">
+        <div class="section-header">About</div>
+        <div id="about-container">
+            <div id="about-content">
+                <img id="selfie" src="resources/basketball.jpg" alt="Your Selfie">
+                <p class = "content-text">I like to play basketball. I also like to code. IDK, this is placeholder text. </p>
+            </div>
+                
+            </div>
+        </div>
+    </div>
 
+
+    <div id="Projects">
+        <div class="section-header right-title">Projects</div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+                <a href="#" target="_blank"><i class="fas fa-code"></i> View Code</a>
+            </div>
+            <div class="grid-item">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+                <a href="#" target="_blank"><i class="fas fa-code"></i> View Code</a>
+            </div>
+            <div class="grid-item">
+                <h3>Project 3</h3>
+                <p>Description of Project 3.</p>
+                <a href="#" target="_blank"><i class="fas fa-code"></i> View Code</a>
+            </div>
+            <div class="grid-item">
+                <h3>Project 4</h3>
+                <p>Description of Project 4.</p>
+                <a href="#" target="_blank"><i class="fas fa-code"></i> View Code</a>
+            </div>
+        </div>
+    </div>
+
+    <div id = "Social">
+        <div class="section-header">Social</div>
+        <div id="email"><p class = "content-text">For Serious Inquiries shoot me an email! <a href = "mailto:elliotmharris@gmail.com">elliotmharris@gmail.com</a></p></div>
+        
+        <ul class = "social-list">
+        <li><a href = "https://www.linkedin.com/in/elliot-harris-a7b0b41b0/"><i class="fab fa-linkedin"></i> Connect on LinkedIn </a></li>
+        <li><a href = "https://github.com/eharris733"> <i class = "fab fa-github"></i> View my Github profile</a></li>
+        <li><a href = "https://medium.com/@elliotmharris"><i class = "fab fa-medium"></i> Follow me on Medium</a> </li>
+        <li><a href="https://www.chess.com/member/eharris733" target="_blank"><i class="fa-solid fa-chess-pawn"></i> Become friends on Chess.com</a></li>
+        </ul>
     </div>
 
     <footer>
         <div class="footer-content">
             <div class="footer-social">
-                <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">
+                Designed and Created by Elliot Harris 2023
+                <!-- <a href="https://www.linkedin.com/in/elliot-harris-a7b0b41b0/" target="_blank">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
-                <a href="https://github.com/yourgithubusername" target="_blank">
+                <a href="https://github.com/eharris733" target="_blank">
                     <i class="fab fa-github"></i> GitHub
-                </a>
+                </a> -->
             </div>
         </div>
     </footer>

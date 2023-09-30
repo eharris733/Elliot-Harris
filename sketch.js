@@ -21,6 +21,7 @@ function setup() {
   canvas.position(0,0);
   canvas.style("z-index", "-1");
   setWorld();
+  frameRate(24);
 }
 
 function draw() {

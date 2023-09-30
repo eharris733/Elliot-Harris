@@ -42,25 +42,17 @@ a{
     justify-content: flex-end;
 }
 
-#About {
-    /* padding-top: 40px;
-    margin: 20px; */
-}
 
-#left-about{
+#about-content{
     padding-top: 20px;
     display: flex;
     gap: 40px;
     flex: 1;
     align-items: center;
+    padding-top: 40px;
+    margin: 20px;
     
 }
-#right-about{
-    display: flex;
-    flex: 1;
-    text-align: center;
-}
-
 
 #selfie {
     max-width: 50%;
@@ -68,10 +60,68 @@ a{
     flex-shrink: 0; 
 }
 
+/* Grid code is mostly from online, with a lot of modification by me */
+#social{
+    margin-bottom: 40px;
+}
 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px;
+    margin: 40px auto;
+}
+
+.grid-item {
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item h3 {
+    font-family: 'Space Mono', 'monospace' ;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-family: 'Space Mono', 'monospace' ;
+    margin-bottom: 20px;
+}
+
+.grid-item a {
+    color: black; /* Link color */
+    text-decoration: none;
+}
+
+.grid-item a:hover {
+    text-decoration: underline;
+}
+
+/* social buttons code */
+.social-list{
+    text-align: center;
+    font-family: 'Space Mono', 'monospace' ;
+}
+
+.social-list li{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+#email{
+    text-align: center;
+}
+
+
+
+
+/* footer code */
 footer {
     background-color: #f0f0f0;
-    padding: 20px;
+    padding-top: 10px;
     text-align: center;
 }
 
@@ -87,9 +137,11 @@ footer {
     text-decoration: none;
 }
 
-.footer-social i {
+.footer-social {
+    padding-top: 30px;
     margin-right: 5px;
-    font-size: 18px;
+    font-size: 14px;
+    font-family: 'Space Mono', 'monospace' ;
 }
 
 .footer-social a:hover {
