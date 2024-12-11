@@ -14,27 +14,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"  />
 
 </head>
-
 <body>
+    <!-- Abstract Background Shapes -->
+    <!-- <div id="abstract-shapes">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+            <circle cx="200" cy="100" r="50" fill="rgba(255, 99, 71, 0.6)" />
+            <circle cx="600" cy="300" r="75" fill="rgba(70, 130, 180, 0.6)" />
+        </svg>
+    </div> -->
+
     <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
-    <script src = "config.js"></script>
+    <script src="config.js"></script>
     <script src="world.js"></script>
     <script src="animal.js"></script>
     <script src="prey.js"></script>
     <script src="predator.js"></script>
     <script src="sketch.js"></script>
-    <script src = "smoothscroll.js"></script>
-        
-        
-    <div id = "main-menu">
+    <script src="smoothscroll.js"></script>
+
+    <div id="main-menu">
         <h1>Elliot Harris</h1>
-        <h6>Creative Coder. Full Stack Developer. </h3>
-    
-        <ul >
-            <li><a href = "#About">About</a></li>
-            <li><a href = #Projects>Projects</a></li>
-            <li><a href = "resources/ElliotHarrisResume.pdf" download="ElliotHarrisResume.pdf">Resume</a></li>
-            <li><a href = "#Social">Social</a></li>
+        <h6>Creative Coder. Full Stack Developer.</h6>
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li>
+                <a href="resources/ElliotHarrisResume.pdf" download="ElliotHarrisResume.pdf">Resume</a>
+            </li>
+            <li><a href="#Social">Social</a></li>
         </ul>
     </div>
 
@@ -53,6 +60,17 @@
     <div id="Projects">
         <div class="section-header right-title">Projects</div>
         <div class="grid-container">
+            <div class="grid-item">
+                <h3>GERALD Chess Engine Thesis</h3>
+                <p>GERALD is a product of passion, C++ research chess engine using genetic algorithms to tune it's hyperparameters and integral functions. Featuring classic search optimizations such as Alpha-Beta pruning, the quiescience search, and a handcrafted evaluation, this program is  nearly unbeatable! (See gif of GERALD destryong my lousy play)</p>
+                <img class = "grid-img" src = "resources/MyEngineInAction.gif"/>
+                <a class = "view-code"
+                href="https://digitalcommons.bard.edu/senproj_s2024/119/"   
+                target="_blank"><i class="fa-brands fa-readme"></i> Read Thesis</a>
+                <a class = "view-code" 
+                href="https://github.com/eharris733/Senior-Project-Chess-AI"
+                target="_blank"><i class="fas fa-code"></i> View Code</a>
+            </div>
             <div class="grid-item">
                 <h3><a href = "https://devpost.com/software/handwriting-teacher">Handwriting Teacher</a></h3>
                 <p>Winner of the 2023 HackMIT Education Track. Utilizes OCR, prompt engineering, and sequence alignement algorithms to provide intelligent feedback on your handwriting.</p>
@@ -73,12 +91,7 @@
                 <img class = "grid-img" src = "resources/Screenshot 2023-09-29 at 11.13.03 PM.png"/>
                 <a class = "view-code" href="#" target="_blank"><i class="fas fa-code"></i> View Code</a>
             </div>
-            <div class="grid-item">
-                <h3>Chess Engine</h3>
-                <p>Featuring classic search optimizations such as Alpha-Beta pruning, the quiescience search, and a handcrafted evaluation, this program was enough to take down a friend of mine! (See gif below for unexpected ending)</p>
-                <img class = "grid-img" src = "resources/MyEngineInAction.gif"/>
-                <a class = "view-code" href="https://github.com/eharris733/ChessAI" target="_blank"><i class="fas fa-code"></i> View Code</a>
-            </div>
+            
         </div>
     </div>
 

@@ -8,7 +8,7 @@ class Prey extends Animal {
       if (!this.alive) {
         return;
       }
-      fill(0, 0, 255);
+      fill(70, 130, 180, 150); // Semi-transparent blue
       noStroke();
       ellipse(0, 0, this.sz * 2, 10);
     }

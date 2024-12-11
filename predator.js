@@ -7,7 +7,7 @@ class Predator extends Animal {
       if (!this.alive) {
         return;
       }
-      fill(255, 0, 0);
+      fill(255, 99, 71, 150); // Semi-transparent red
       noStroke();
       rect(0, 0, this.sz * 2, 10);
     }
